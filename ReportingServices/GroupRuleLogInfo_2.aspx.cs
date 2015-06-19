@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 
 using System.Text;
 
+using System.Configuration;
+
 //database
 using System.Data.SqlClient;
 using System.Data;
@@ -64,8 +66,30 @@ namespace ReportingServices
                 DataSet ds2;
                 try
                 {
+                    AppSettingsReader asr = new AppSettingsReader();
+                    string[] pt_scr_3 = ((string)asr.GetValue("SCR_3", typeof(string))).Split(';');
+                    string[] pt_scr_4 = ((string)asr.GetValue("SCR_4", typeof(string))).Split(';');
+
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("select * from point_machine_map where pointname not like '%SIM%' and (machineid=3 or machineid=4)");
+                    sb.Append("select * from point_machine_map where pointname in (");
+
+                    foreach (string ps3 in pt_scr_3)
+                    {
+                        sb.Append("'");
+                        sb.Append(ps3);
+                        sb.Append("'");
+                        sb.Append(",");
+                    }
+
+                    foreach (string ps4 in pt_scr_4)
+                    {
+                        sb.Append("'");
+                        sb.Append(ps4);
+                        sb.Append("'");
+                        sb.Append(",");
+                    }
+                    sb.Remove(sb.Length - 1, 1);
+                    sb.Append(")");
                     Database db = DatabaseFactory.CreateDatabase("dbconn");
                     System.Data.Common.DbCommand dbc = db.GetSqlStringCommand(sb.ToString());
                     ds2 = db.ExecuteDataSet(dbc);
@@ -423,9 +447,9 @@ namespace ReportingServices
                 System.Data.Common.DbCommand dbc = db.GetSqlStringCommand(sb.ToString());
                 //timestamps = DateTime.Parse(db.ExecuteScalar(dbc).ToString());
                 ds = db.ExecuteDataSet(dbc);
-                st = DateTime.Parse(ds.Tables[0].Rows[0]["timelog"].ToString()).AddHours(-3).ToString("yyyy-MM-dd HH:mm:ss");
-                et = DateTime.Parse(ds.Tables[0].Rows[0]["timelog"].ToString()).AddHours(3).ToString("yyyy-MM-dd HH:mm:ss");
-                //pn = ds.Tables[0].Rows[0]["rulename"].ToString();
+                st = DateTime.Parse(ds.Tables[0].Rows[0]["timelog"].ToString()).AddHours(-2).ToString("yyyy-MM-dd HH:mm:ss");
+                et = DateTime.Parse(ds.Tables[0].Rows[0]["timelog"].ToString()).AddHours(2).ToString("yyyy-MM-dd HH:mm:ss");
+                pn = ds.Tables[0].Rows[0]["rulename"].ToString();
                 mi = ds.Tables[0].Rows[0]["machineid"].ToString();
                 //if (ds.Tables[0].Rows[0]["cemstype"].ToString() == "SCR")
                 //{
@@ -445,22 +469,24 @@ namespace ReportingServices
                 return;
             }
 
-            string ttid = "";
-            if (mi == "1")
+            string ttid = "1";
+
+            AppSettingsReader asr = new System.Configuration.AppSettingsReader();
+
+            for (int i = 1; i < 50; i++)
             {
-                ttid = "3";
-            }
-            else if (mi == "2")
-            {
-                ttid = "22";
-            }
-            else if (mi == "3")
-            {
-                ttid = "23";
-            }
-            else if (mi == "4")
-            {
-                ttid = "24";
+                try
+                {
+                    if (((string)asr.GetValue("CHARTTAG_" + i.ToString(), typeof(string))).Split(';').Contains(pn))
+                    {
+                        ttid = i.ToString();
+                        break;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
 
             ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "detail chart", "window.open('http://10.150.124.140:8088?xyz=iahbhy&tagtypeid=" + ttid + "&TimeFrom=" + st + "&TimeTo=" + et + "')", true);
