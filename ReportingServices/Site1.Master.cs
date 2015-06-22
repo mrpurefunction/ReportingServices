@@ -28,6 +28,7 @@ namespace WebApplication1
                 TreeViewNode tvn_icemsgroup = new TreeViewNode("环保工况信息管理流");
                 TreeViewNode tvn_minimum = new TreeViewNode("环保超低排放管理");
                 TreeViewNode tvn_fgdscr = new TreeViewNode("脱硫脱硝工况分析");
+                TreeViewNode tvn_epasync = new TreeViewNode("EPA数据上传更新");
 
                 tvn_fgdscr.Nodes.Add("脱硝工况分析", "scr_startstop_ab", null, "~/scr_startstop_ab.aspx");
                 tvn_fgdscr.Nodes.Add("脱硫工况分析", "machine_startstop", null, "~/machine_startstop.aspx");
@@ -125,6 +126,13 @@ namespace WebApplication1
 
                 tvn.Nodes.Add(tvn_minimum);
                 tvn.Nodes.Add(tvn_icemsgroup);
+
+                if ((string)Session["authority"] == "6")
+                {
+                    tvn_epasync.Nodes.Add("异常分组EPA上传更新", "ExceptionDataGroup_Sync", null, "~/ExceptionDataGroupSyncRpt.aspx");
+                    tvn_epasync.Nodes.Add("标定均值EPA上传更新", "CalibValue_Sync", null, "~/CalibValueSyncRpt.aspx");
+                    tvn.Nodes.Add(tvn_epasync);
+                }
                 
                 tvn2.Nodes.Add(tvn);
                 ASPxTreeView1.Nodes.Add(tvn2);

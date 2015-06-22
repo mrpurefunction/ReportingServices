@@ -46,6 +46,9 @@
     <Reference Include="Envir_ExceptionGroup">
       <HintPath>..\..\Envir_ExceptionGroup.dll</HintPath>
     </Reference>
+    <Reference Include="EPASync">
+      <HintPath>..\..\EPASync.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -85,7 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\ReportingServices.dll.config" />
+    <Content Include="ExceptionDataGroupSyncRpt.aspx" />
     <Content Include="Machine_StartStop.aspx" />
+    <Content Include="CalibValueSyncRpt.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
     <Content Include="dashis.aspx" />
     <Content Include="daspi_watchdog.aspx" />
@@ -831,12 +836,26 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExceptionDataGroupSyncRpt.aspx.cs">
+      <DependentUpon>ExceptionDataGroupSyncRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExceptionDataGroupSyncRpt.aspx.designer.cs">
+      <DependentUpon>ExceptionDataGroupSyncRpt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Machine_StartStop.aspx.cs">
       <DependentUpon>Machine_StartStop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Machine_StartStop.aspx.designer.cs">
       <DependentUpon>Machine_StartStop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalibValueSyncRpt.aspx.cs">
+      <DependentUpon>CalibValueSyncRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalibValueSyncRpt.aspx.designer.cs">
+      <DependentUpon>CalibValueSyncRpt.aspx</DependentUpon>
     </Compile>
     <Compile Include="SCR_StartStop_AB.aspx.cs">
       <DependentUpon>SCR_StartStop_AB.aspx</DependentUpon>
