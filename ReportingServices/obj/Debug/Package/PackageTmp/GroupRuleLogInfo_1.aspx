@@ -173,6 +173,8 @@
         DateFormat="yyyy-MM-dd 00:00:00"
         DisplayMode="ControlEditor"
         ShowOn="Focus" />
+
+        <%--<asp:TextBox class="easyui-datetimebox" id="DatePicker1" runat="server" data-options="formatter:ww3,parser:w3" Width="180"></asp:TextBox>--%>
         
         <asp:DropDownList ID="Machine_ddl" runat="server" Visible="false">           
             <asp:ListItem Text="1" Value="1">1</asp:ListItem>

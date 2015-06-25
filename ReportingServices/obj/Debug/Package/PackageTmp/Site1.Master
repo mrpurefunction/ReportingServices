@@ -5,10 +5,19 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server" title="乐清电厂工况日志管理" style="text-align:center;font-family:'Microsoft JhengHei';font-size:medium" >
-    <div style="height:3px;"></div>
-    <div style="text-align:left;font-family:'Microsoft JhengHei';font-size:xx-large;padding-left:550px;background-color:aliceblue" id="headtext" runat="server">乐清电厂工况日志管理</div>
-<%--    <div style="height:1px;background-color:aliceblue"></div>--%>
+<head runat="server" title="浙能乐清电厂工况日志管理" style="text-align:center;font-family:'Microsoft JhengHei';font-size:small;font-weight:bold" >
+<%--    <div style="height:3px;"></div>    --%>
+        <table>
+            <tr>
+                <td><div style="width:240px;height:40px"><img  src="images/zqlogo.png"/></div></td>
+        <td><%--<div style="text-align:left;font-family:'Microsoft JhengHei';font-size:x-large;padding-left:550px;background-color:aliceblue;font-weight:bold" id="headtext" runat="server">浙能乐清电厂工况日志管理</div>--%>
+            <div style="width:1100px;height:40px"><img  src="images/title.png"/></div>
+        </td>
+                </tr>
+            <%--<tr><td><div style="height:2px;background-color:blue"></div></td><td><div style="height:2px;background-color:blue"></div></td></tr>--%>
+        </table>
+    
+    <div style="height:5px;background-color:aliceblue;width:1380px"></div>
          <div style="height:5px;padding-left:1300px;font-size:small">
         <a href="logouthandler.ashx" id="logout">注销</a>
              <%--<asp:Label runat="server" Text="注销" OnClick="logouthandler.ashx"></asp:Label>--%>
@@ -61,7 +70,7 @@
             </table>
         </form>
 
-    <div style="height:1px;background-color:aliceblue"></div>
+    <div style="height:5px;background-color:aliceblue"></div>
         <div style="height:5px;background-color:white"></div>
     <div style="text-align:left;font-family:'Microsoft JhengHei';font-size:small;padding-left:650px">智企信息 Copyright 2015</div>
     <div style="height:5px;"></div>
