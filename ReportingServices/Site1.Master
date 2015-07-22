@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server" title="浙能乐清电厂工况日志管理" style="text-align:center;font-family:'Microsoft JhengHei';font-size:small;font-weight:bold" >
+<head runat="server" title="浙能温州电厂工况日志管理" style="text-align:center;font-family:'Microsoft JhengHei';font-size:small;font-weight:bold" >
 <%--    <div style="height:3px;"></div>    --%>
         <table>
             <tr>

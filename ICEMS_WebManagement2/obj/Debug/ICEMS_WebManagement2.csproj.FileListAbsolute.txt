@@ -19,7 +19,6 @@ C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebMan
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\zh-Hans\System.Web.Helpers.resources.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\zh-Hans\System.Web.Mvc.resources.dll
-C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\obj\Debug\ICEMS_WebManagement2.csprojResolveAssemblyReference.cache
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\obj\Debug\ICEMS_WebManagement2.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\obj\Debug\ICEMS_WebManagement2.pdb
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\EntityFramework.dll
