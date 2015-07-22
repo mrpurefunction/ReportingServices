@@ -2,3 +2,4 @@ C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\Biz\bin\Debu
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\Biz\bin\Debug\Biz.pdb
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\Biz\obj\Debug\Biz.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\Biz\obj\Debug\Biz.pdb
+C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\Biz\obj\Debug\Biz.csprojResolveAssemblyReference.cache

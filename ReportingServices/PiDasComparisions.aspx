@@ -79,10 +79,10 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label4" runat="server" Text="机组:"></asp:Label>&nbsp;&nbsp;
             <asp:DropDownList  id="machine" runat="server"  Width="100">
-                <asp:ListItem Text="1号机组" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2号机组" Value="2"></asp:ListItem>
                 <asp:ListItem Text="3号机组" Value="3"></asp:ListItem>
                 <asp:ListItem Text="4号机组" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5号机组" Value="5"></asp:ListItem>
+                <asp:ListItem Text="6号机组" Value="6"></asp:ListItem>
             </asp:DropDownList>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label3" runat="server" Text="项目:"></asp:Label>&nbsp;&nbsp;
         <asp:DropDownList ID="ItemType" runat="server" Visible="true" class="easyui-combobox" Width="90px">

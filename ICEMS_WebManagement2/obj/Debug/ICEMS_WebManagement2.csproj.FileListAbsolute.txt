@@ -27,3 +27,4 @@ C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebMan
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\EntityFramework.SqlServer.xml
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\zh-Hans\EntityFramework.resources.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement2\obj\Debug\ICEMS_WebManagement2.csprojResolveAssemblyReference.cache
