@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css"/>
     <link rel="stylesheet" type="text/css" href="easyui/demo/demo.css"/>
     <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
-    <title>乐清电厂工况日志管理</title>
+    <title>温州电厂工况日志管理</title>
 </head>
 <body>
     <table style="width:100%; text-align:center">
@@ -22,7 +22,7 @@
     </table>
     <form id="form1" runat="server" style="align-content:center">
         <br /><br />
-        <div  style="text-align:center;font-family:'Microsoft JhengHei';font-size:xx-large;font-weight:bolder">乐清电厂工况日志管理</div>
+        <div  style="text-align:center;font-family:'Microsoft JhengHei';font-size:xx-large;font-weight:bolder">温州电厂工况日志管理</div>
         <br /><br /><br /><br />
     <div style="text-align:center">
         <label>用户:</label>&nbsp&nbsp&nbsp&nbsp

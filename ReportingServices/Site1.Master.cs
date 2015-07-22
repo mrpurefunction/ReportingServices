@@ -23,7 +23,7 @@ namespace WebApplication1
                 Session["ManagementFlowAuthorityCtl"] = "0";
 
                 TreeViewNode tvn2 = new TreeViewNode("浙能集团");
-                TreeViewNode tvn = new TreeViewNode("乐清电厂");
+                TreeViewNode tvn = new TreeViewNode("温州电厂");
 
                 TreeViewNode tvn_icemsgroup = new TreeViewNode("环保工况信息管理流");
                 TreeViewNode tvn_minimum = new TreeViewNode("环保超低排放管理");
