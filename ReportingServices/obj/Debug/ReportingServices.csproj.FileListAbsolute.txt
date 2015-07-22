@@ -20,3 +20,4 @@ C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingSer
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\bin\Microsoft.Practices.Unity.Interception.pdb
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\bin\Envir_ExceptionGroup.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\bin\EPASync.dll
+C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\obj\Debug\ReportingServices.csprojResolveAssemblyReference.cache

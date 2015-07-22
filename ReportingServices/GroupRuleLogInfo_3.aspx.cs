@@ -210,8 +210,11 @@ namespace ReportingServices
                 //time 20150623
                 string timelog = e.RowData["timelog"];
 
+                //20150710
+                string rn = e.RowData["rulename"];
+
                 StringBuilder sb = new StringBuilder();
-                sb.Append("update t_rulelogs set timelog='" + timelog + "', confirmedgroup = '" + cgt + "', validatedgroup='" + cgt + "', groupstatus=" + gs + ", alarmdis='" + dis + "', confirmeduser='单元长', validateduser='专工', confirmedtime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', validatedtime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'  where id = " + id);
+                sb.Append("update t_rulelogs set rulename='" + rn + "', timelog='" + timelog + "', confirmedgroup = '" + cgt + "', validatedgroup='" + cgt + "', groupstatus=" + gs + ", alarmdis='" + dis + "', confirmeduser='单元长', validateduser='专工', confirmedtime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', validatedtime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'  where id = " + id);
                 Database db = DatabaseFactory.CreateDatabase("dbconn");
                 System.Data.Common.DbCommand dbc = db.GetSqlStringCommand(sb.ToString());
                 db.ExecuteNonQuery(dbc);

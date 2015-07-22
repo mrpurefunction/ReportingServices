@@ -29,6 +29,7 @@ namespace WebApplication1
                 TreeViewNode tvn_minimum = new TreeViewNode("环保超低排放管理");
                 TreeViewNode tvn_fgdscr = new TreeViewNode("脱硫脱硝工况分析");
                 TreeViewNode tvn_epasync = new TreeViewNode("EPA数据上传更新");
+                TreeViewNode tvn_sourcedata = new TreeViewNode("源数据分析");
 
                 tvn_fgdscr.Nodes.Add("脱硝工况分析", "scr_startstop_ab", null, "~/scr_startstop_ab.aspx");
                 tvn_fgdscr.Nodes.Add("脱硫工况分析", "machine_startstop", null, "~/machine_startstop.aspx");
@@ -133,7 +134,11 @@ namespace WebApplication1
                     tvn_epasync.Nodes.Add("标定均值EPA上传更新", "CalibValue_Sync", null, "~/CalibValueSyncRpt.aspx");
                     tvn.Nodes.Add(tvn_epasync);
                 }
-                
+
+                tvn_sourcedata.Nodes.Add("DAS/WEB/PI源数据对比", "MonitorDataCom", null, "~/MonitorDataComparision.aspx");
+                tvn_sourcedata.Nodes.Add("分组指标源数据状态", "GroupMonDataStatus", null, "~/GroupMonitorDataStatus.aspx");
+                tvn.Nodes.Add(tvn_sourcedata);
+
                 tvn2.Nodes.Add(tvn);
                 ASPxTreeView1.Nodes.Add(tvn2);
                 

@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,9 +91,12 @@
     <Content Include="bin\ReportingServices.dll.config" />
     <Content Include="ExceptionDataGroupSyncRpt.aspx" />
     <Content Include="images\title.png" />
+    <Content Include="images\znlogo.png" />
     <Content Include="images\zqlogo.png" />
     <Content Include="Machine_StartStop.aspx" />
     <Content Include="CalibValueSyncRpt.aspx" />
+    <Content Include="MonitorDataComparision.aspx" />
+    <Content Include="GroupMonitorDataStatus.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
     <Content Include="dashis.aspx" />
     <Content Include="daspi_watchdog.aspx" />
@@ -859,6 +863,20 @@
     <Compile Include="CalibValueSyncRpt.aspx.designer.cs">
       <DependentUpon>CalibValueSyncRpt.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MonitorDataComparision.aspx.cs">
+      <DependentUpon>MonitorDataComparision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorDataComparision.aspx.designer.cs">
+      <DependentUpon>MonitorDataComparision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupMonitorDataStatus.aspx.cs">
+      <DependentUpon>GroupMonitorDataStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupMonitorDataStatus.aspx.designer.cs">
+      <DependentUpon>GroupMonitorDataStatus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SCR_StartStop_AB.aspx.cs">
       <DependentUpon>SCR_StartStop_AB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -903,7 +921,6 @@
     </Compile>
     <Compile Include="ExceptionDetails.aspx.cs">
       <DependentUpon>ExceptionDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExceptionDetails.aspx.designer.cs">
       <DependentUpon>ExceptionDetails.aspx</DependentUpon>
