@@ -379,7 +379,7 @@ namespace ReportingServices
                                 continue;
                             }
 
-                            //special condition 20150730
+                            //special condition 20150730 type:2
                             int? sconcount = (new Exception_Group()).GetSconRelatedCount_DUST(DateTime.Parse(dr_expt["timestamps"].ToString()), 1, 1, int.Parse(dr_expt["pointid"].ToString()));
                             if (sconcount > 0)
                             {
