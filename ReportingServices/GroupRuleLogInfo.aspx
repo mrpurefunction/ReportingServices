@@ -158,10 +158,10 @@
         ShowOn="Focus" />
         
         <asp:DropDownList ID="Machine_ddl" runat="server" Visible="false">           
-            <asp:ListItem Text="1" Value="1">1</asp:ListItem>
-            <asp:ListItem Text="2" Value="2">2</asp:ListItem>
             <asp:ListItem Text="3" Value="3">3</asp:ListItem>
             <asp:ListItem Text="4" Value="4">4</asp:ListItem>
+            <asp:ListItem Text="5" Value="5">5</asp:ListItem>
+            <asp:ListItem Text="6" Value="6">6</asp:ListItem>
         </asp:DropDownList>
         <asp:DropDownList ID="CemsType_ddl" runat="server" Visible="true">
             <asp:ListItem>FGD</asp:ListItem>
