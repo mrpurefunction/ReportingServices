@@ -54,3 +54,5 @@ C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebMan
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement.Tests\obj\Debug\ICEMS_WebManagement.Tests.csprojResolveAssemblyReference.cache
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement.Tests\obj\Debug\ICEMS_WebManagement.Tests.dll
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement.Tests\obj\Debug\ICEMS_WebManagement.Tests.pdb
+C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ICEMS_WebManagement.Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
