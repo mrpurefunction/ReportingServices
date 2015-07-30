@@ -378,6 +378,23 @@ namespace ReportingServices
                                 (new Exception_Group()).AddExceptionGroupData(envid, 3, "", 0);
                                 continue;
                             }
+
+                            //special condition 20150730
+                            int? sconcount = (new Exception_Group()).GetSconRelatedCount_DUST(DateTime.Parse(dr_expt["timestamps"].ToString()), 1, 1, int.Parse(dr_expt["pointid"].ToString()));
+                            if (sconcount > 0)
+                            {
+                                System.Data.DataSet ds_scon = (new Exception_Group()).GetSconRelatedDs_DUST(DateTime.Parse(dr_expt["timestamps"].ToString()), 1, 1, int.Parse(dr_expt["pointid"].ToString()));
+                                if (ds_scon != null)
+                                {
+                                    foreach (System.Data.DataRow dr_scon in ds_scon.Tables[0].Rows)
+                                    {
+                                        (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_scon["id"].ToString()), 2);
+                                    }
+                                }
+                                (new Exception_Group()).AddExceptionGroupData(envid, 2, "", 0);
+                                continue;
+                            }
+
                         }
                     }
                 }
