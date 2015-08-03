@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 
 using System.Text;
 
+using System.Configuration;
+
 //database
 using System.Data.SqlClient;
 using System.Data;
@@ -376,7 +378,19 @@ namespace ReportingServices
                 ttid = "24";
             }
 
-            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "detail chart", "window.open('http://10.150.124.140:8088?xyz=iahbhy&tagtypeid=" + ttid + "&TimeFrom=" + st + "&TimeTo=" + et + "')", true);
+            AppSettingsReader asr = new System.Configuration.AppSettingsReader();
+
+            string highchartpath = "";
+            try
+            {
+                highchartpath = ((string)asr.GetValue("HighChartPath", typeof(string)));
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "detail chart", "window.open('" + highchartpath + "?xyz=iahbhy&tagtypeid=" + ttid + "&TimeFrom=" + st + "&TimeTo=" + et + "')", true);
             //Page.ClientScript.RegisterStartupScript(this.GetType(), "detail chart", "window.open('reports_client.aspx?pname=" + pn + "&pointtype=" + pt + "&machineid=" + mi + "&starttime=" + st + "&endtime=" + et + "')", true);
         }
 
