@@ -67,6 +67,9 @@ namespace ReportingServices
                     string[] pt_fgd_3 = ((string)asr.GetValue("FGD_3", typeof(string))).Split(';');
                     string[] pt_fgd_4 = ((string)asr.GetValue("FGD_4", typeof(string))).Split(';');
 
+                    //add simulation points 20150731
+                    string[] simu_pt = ((string)asr.GetValue("SimulationPoints", typeof(string))).Split(';');
+
                     StringBuilder sb = new StringBuilder();
                     sb.Append("select * from point_machine_map where pointname in (");
                     foreach (string ps1 in pt_fgd_1)
@@ -108,6 +111,12 @@ namespace ReportingServices
                     foreach (DataRow dr in ds2.Tables[0].Rows)
                     {
                         PointsDownList.Items.Add(new ListItem(dr["description"].ToString(), dr["pointname"].ToString()));
+                    }
+
+                    //add simulation points 20150731
+                    foreach (string sp in simu_pt)
+                    {
+                        PointsDownList.Items.Add(new ListItem(sp, sp));
                     }
                 }
                 catch (Exception ex)
