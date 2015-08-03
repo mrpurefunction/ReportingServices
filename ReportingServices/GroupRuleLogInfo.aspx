@@ -87,7 +87,7 @@
             <asp:DropDownList  id="machine" runat="server"  Width="100">        
                 <asp:ListItem Text="3号机组" Value="3"></asp:ListItem>
                 <asp:ListItem Text="4号机组" Value="4"></asp:ListItem>
-                 <asp:ListItem Text="5号机组" Value="5"></asp:ListItem>
+                <asp:ListItem Text="5号机组" Value="5"></asp:ListItem>
                 <asp:ListItem Text="6号机组" Value="6"></asp:ListItem>
             </asp:DropDownList>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -105,7 +105,7 @@
             <Columns>
                 <cc1:JQGridColumn  DataField="id" TextAlign="Center" Visible="false" PrimaryKey="true" HeaderText="ID号" DataType="Int">
                 </cc1:JQGridColumn>              
-                <cc1:JQGridColumn  DataField="rulename" TextAlign="Center" HeaderText="规则名称" DataType="String" Width="160" Editable="true"  EditType="DropDown" EditorControlID="PointsDownList">
+                <cc1:JQGridColumn  DataField="rulename" TextAlign="Center" HeaderText="点名" DataType="String" Width="160" Editable="true"  EditType="DropDown" EditorControlID="PointsDownList">
                 </cc1:JQGridColumn>
                 <cc1:JQGridColumn  DataField="machineid" TextAlign="Center" HeaderText="机组" DataType="Int" Width="30" Editable="false"  EditType="DropDown" EditorControlID="Machine_ddl"><%-- EditorControlID="Machine_ddl"--%>
                 </cc1:JQGridColumn>

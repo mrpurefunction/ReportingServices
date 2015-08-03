@@ -98,7 +98,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="btn_rptqry" runat="server" Text="查询" OnClick="btn_rptqry_Click" class="easyui-linkbutton" width="50" Height="25"/>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <asp:Button ID="btn_group" runat="server" Text="分组" OnClick="btn_group_Click" class="easyui-linkbutton" width="50" Height="25" OnClientClick="if(confirm('确实要重新分组?')!=true) return false;"/>
+             <asp:Button ID="btn_group" runat="server" Text="异常分组" OnClick="btn_group_Click" class="easyui-linkbutton" width="50" Height="25" OnClientClick="if(confirm('确实要重新分组?')!=true) return false;"/>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <%--            <asp:Label runat="server" Text="显示:"></asp:Label>&nbsp;
             <asp:CheckBox ID="CheckBox_validvalue" runat="server" Text="有效值" />
