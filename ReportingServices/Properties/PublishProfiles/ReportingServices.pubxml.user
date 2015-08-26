@@ -12,11 +12,74 @@
     <File Include="App_Data/Northwind.mdb">
       <publishTime>10/15/2014 15:12:16</publishTime>
     </File>
+    <File Include="bin/de/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:16</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:47</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:47</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:03:11</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:07</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v14.1.dll">
+      <publishTime>10/21/2014 22:02:16</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v14.1.Core.dll">
+      <publishTime>10/21/2014 22:02:47</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v14.1.Core.dll">
+      <publishTime>10/21/2014 22:02:48</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v14.1.Core.dll">
+      <publishTime>10/21/2014 22:03:11</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxThemes.v14.1.dll">
+      <publishTime>10/21/2014 22:02:12</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v14.1.dll">
+      <publishTime>10/21/2014 22:02:07</publishTime>
+    </File>
     <File Include="bin/Envir_ExceptionGroup.dll">
-      <publishTime>06/04/2015 10:17:25</publishTime>
+      <publishTime>08/11/2015 13:38:44</publishTime>
     </File>
     <File Include="bin/EPASync.dll">
       <publishTime>07/01/2015 08:22:16</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:16</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:47</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:48</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:03:11</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:07</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:16</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:47</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:48</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:03:11</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:07</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll">
       <publishTime>04/16/2010 14:16:58</publishTime>
@@ -55,13 +118,28 @@
       <publishTime>04/16/2010 13:42:32</publishTime>
     </File>
     <File Include="bin/ReportingServices.dll">
-      <publishTime>07/08/2015 14:32:06</publishTime>
+      <publishTime>08/25/2015 12:34:31</publishTime>
     </File>
     <File Include="bin/ReportingServices.dll.config">
-      <publishTime>06/23/2015 17:43:02</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="bin/ReportingServices.pdb">
-      <publishTime>07/08/2015 14:32:06</publishTime>
+      <publishTime>08/25/2015 12:34:31</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:16</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:47</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:02:48</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>10/21/2014 22:03:11</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>10/21/2014 22:02:07</publishTime>
     </File>
     <File Include="bin/Trirand.Web.dll">
       <publishTime>11/13/2014 11:12:07</publishTime>
@@ -1933,7 +2011,7 @@
       <publishTime>10/21/2014 13:58:37</publishTime>
     </File>
     <File Include="ExceptionInfo.aspx">
-      <publishTime>05/27/2015 13:42:04</publishTime>
+      <publishTime>08/06/2015 10:48:42</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>04/28/2015 14:37:34</publishTime>
@@ -1942,19 +2020,19 @@
       <publishTime>07/08/2015 14:32:02</publishTime>
     </File>
     <File Include="GroupRuleLogInfo.aspx">
-      <publishTime>06/02/2015 19:23:30</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_1.aspx">
-      <publishTime>06/23/2015 17:14:04</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_2.aspx">
-      <publishTime>06/05/2015 19:00:43</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_3.aspx">
-      <publishTime>06/05/2015 19:00:42</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_FGD.aspx">
-      <publishTime>06/02/2015 20:05:27</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="head1.ascx">
       <publishTime>01/21/2015 19:10:01</publishTime>
@@ -1969,13 +2047,25 @@
       <publishTime>10/15/2014 14:57:41</publishTime>
     </File>
     <File Include="images/title.png">
-      <publishTime>06/25/2015 17:22:58</publishTime>
+      <publishTime>08/06/2015 14:08:45</publishTime>
     </File>
     <File Include="images/znlogo.png">
       <publishTime>06/25/2015 21:34:23</publishTime>
     </File>
     <File Include="images/zqlogo.png">
       <publishTime>06/25/2015 16:28:56</publishTime>
+    </File>
+    <File Include="instrumentrunning_basic.aspx">
+      <publishTime>08/25/2015 12:31:54</publishTime>
+    </File>
+    <File Include="instrumentrunning_dust.aspx">
+      <publishTime>08/25/2015 12:31:53</publishTime>
+    </File>
+    <File Include="instrumentrunning_nox.aspx">
+      <publishTime>08/25/2015 12:31:54</publishTime>
+    </File>
+    <File Include="instrumentrunning_so2.aspx">
+      <publishTime>08/25/2015 12:31:53</publishTime>
     </File>
     <File Include="js/trirand/i18n/grid.locale-ar.js">
       <publishTime>10/15/2014 15:07:55</publishTime>
@@ -2134,13 +2224,16 @@
       <publishTime>10/15/2014 15:04:15</publishTime>
     </File>
     <File Include="logon.aspx">
-      <publishTime>06/26/2015 21:58:33</publishTime>
+      <publishTime>08/06/2015 14:08:45</publishTime>
     </File>
     <File Include="LogoutHandler.ashx">
       <publishTime>05/06/2015 13:20:24</publishTime>
     </File>
     <File Include="Machine_StartStop.aspx">
       <publishTime>05/12/2015 08:17:47</publishTime>
+    </File>
+    <File Include="machine_startstop_rd.aspx">
+      <publishTime>08/25/2015 12:31:53</publishTime>
     </File>
     <File Include="MinimumRelease.aspx">
       <publishTime>01/25/2015 15:32:12</publishTime>
@@ -2155,7 +2248,7 @@
       <publishTime>07/08/2015 14:22:34</publishTime>
     </File>
     <File Include="PiDasComparisions.aspx">
-      <publishTime>05/07/2015 10:59:16</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
       <publishTime>10/23/2014 10:56:18</publishTime>
@@ -2187,8 +2280,11 @@
     <File Include="SCR_StartStop_AB.aspx">
       <publishTime>05/12/2015 08:15:49</publishTime>
     </File>
+    <File Include="scr_startstop_ab_rd.aspx">
+      <publishTime>08/25/2015 12:31:53</publishTime>
+    </File>
     <File Include="Site1.Master">
-      <publishTime>06/25/2015 17:25:51</publishTime>
+      <publishTime>08/06/2015 14:08:44</publishTime>
     </File>
     <File Include="Themes/images/ui-bg_flat_0_aaaaaa_40x100.png">
       <publishTime>08/13/2014 13:57:50</publishTime>
@@ -2260,7 +2356,7 @@
       <publishTime>01/25/2015 16:16:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/09/2015 15:58:06</publishTime>
+      <publishTime>08/25/2015 12:34:59</publishTime>
     </File>
     <File Include="WebForm1.aspx">
       <publishTime>01/20/2015 12:02:37</publishTime>

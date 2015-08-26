@@ -97,6 +97,12 @@
     <Content Include="CalibValueSyncRpt.aspx" />
     <Content Include="MonitorDataComparision.aspx" />
     <Content Include="GroupMonitorDataStatus.aspx" />
+    <Content Include="instrumentrunning_nox.aspx" />
+    <Content Include="instrumentrunning_so2.aspx" />
+    <Content Include="instrumentrunning_dust.aspx" />
+    <Content Include="machine_startstop_rd.aspx" />
+    <Content Include="instrumentrunning_basic.aspx" />
+    <Content Include="scr_startstop_ab_rd.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
     <Content Include="dashis.aspx" />
     <Content Include="daspi_watchdog.aspx" />
@@ -876,6 +882,48 @@
     </Compile>
     <Compile Include="GroupMonitorDataStatus.aspx.designer.cs">
       <DependentUpon>GroupMonitorDataStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_nox.aspx.cs">
+      <DependentUpon>instrumentrunning_nox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_nox.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_nox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_so2.aspx.cs">
+      <DependentUpon>instrumentrunning_so2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_so2.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_so2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_dust.aspx.cs">
+      <DependentUpon>instrumentrunning_dust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_dust.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_dust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="machine_startstop_rd.aspx.cs">
+      <DependentUpon>machine_startstop_rd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="machine_startstop_rd.aspx.designer.cs">
+      <DependentUpon>machine_startstop_rd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_basic.aspx.cs">
+      <DependentUpon>instrumentrunning_basic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_basic.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_basic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scr_startstop_ab_rd.aspx.cs">
+      <DependentUpon>scr_startstop_ab_rd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scr_startstop_ab_rd.aspx.designer.cs">
+      <DependentUpon>scr_startstop_ab_rd.aspx</DependentUpon>
     </Compile>
     <Compile Include="SCR_StartStop_AB.aspx.cs">
       <DependentUpon>SCR_StartStop_AB.aspx</DependentUpon>
