@@ -99,15 +99,82 @@ namespace ReportingServices
                         long envid = long.Parse(dr_expt["id"].ToString());
                         (new Exception_Group()).DeleteExceptionGroupData(envid);
                         (new Exception_Rulelog()).DeleteMatchData(envid);
-
                         //NOx
                         if (int.Parse(dr_expt["indicatorid"].ToString()) == 3)
-                        {                          
-                            //machine start and stop,typeid:15
-                            int? startstopcount = (new Exception_Group()).GetStartStopCount(DateTime.Parse(dr_expt["timestamps"].ToString()), 2, 2, int.Parse(dr_expt["pointid"].ToString()));
+                        {
+                            //scr,typeid:1 
+                            int? scrcount = (new Exception_Group()).GetScrRelatedCount(DateTime.Parse(dr_expt["timestamps"].ToString()), 3, 3, int.Parse(dr_expt["pointid"].ToString()));
+                            System.Data.DataSet ds_scr = null;
+                            if (scrcount > 0)
+                            {
+                                ds_scr = (new Exception_Group()).GetScrRelatedDs(DateTime.Parse(dr_expt["timestamps"].ToString()), 3/*offset hour*/, 3, int.Parse(dr_expt["pointid"].ToString()));
+                                #region 
+                                //if (ds_scr != null) 
+                                //{ 
+                                //    foreach (System.Data.DataRow dr_scr in ds_scr.Tables[0].Rows) 
+                                //    { 
+                                //        (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_scr["id"].ToString()), 1); 
+                                //    } 
+                                //} 
+                                //(new Exception_Group()).AddExceptionGroupData(envid, 1, "", 0); 
+                                //continue; 
+
+                                #endregion
+                            }
+                       
+                             //machine start and stop,typeid:15 
+                             int? startstopcount = (new Exception_Group()).GetStartStopCount(DateTime.Parse(dr_expt["timestamps"].ToString()), 2, 2, int.Parse(dr_expt["pointid"].ToString()));
+                            System.Data.DataSet ds_ss = null;
                             if (startstopcount > 0)
                             {
-                                System.Data.DataSet ds_ss = (new Exception_Group()).GetStartStopDs(DateTime.Parse(dr_expt["timestamps"].ToString()), 2, 2, int.Parse(dr_expt["pointid"].ToString()));
+                                ds_ss = (new Exception_Group()).GetStartStopDs(DateTime.Parse(dr_expt["timestamps"].ToString()), 2, 2, int.Parse(dr_expt["pointid"].ToString()));
+                                #region 
+                                //if (ds_ss != null) 
+                                //{ 
+                                //    foreach (System.Data.DataRow dr_ss in ds_ss.Tables[0].Rows) 
+                                //    { 
+                                //        (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_ss["id"].ToString()), 15); 
+                                //    } 
+                                //} 
+                                //(new Exception_Group()).AddExceptionGroupData(envid, 15, "", 0); 
+                                //continue; 
+
+                                #endregion
+                            }
+
+                            // judge it is scr start stop or machine start stop 
+                            if ((startstopcount > 0) && (scrcount > 0))
+                            {
+                                //if the machine start stop time <= exception timestamps, then it is a machine start stop case. 15 
+                                if (DateTime.Parse(ds_ss.Tables[0].Rows[0]["timelog"].ToString()) <= DateTime.Parse(dr_expt["timestamps"].ToString()))
+                                {
+                                    if (ds_ss != null)
+                                    {
+                                        foreach (System.Data.DataRow dr_ss in ds_ss.Tables[0].Rows)
+                                        {
+                                            (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_ss["id"].ToString()), 15);
+                                        }
+                                    }
+                                    (new Exception_Group()).AddExceptionGroupData(envid, 15, "", 0);
+                                    continue;
+                                }
+                                // it is a scr start stop case. 1 
+                                else
+                                {
+                                    if (ds_scr != null)
+                                    {
+                                        foreach (System.Data.DataRow dr_scr in ds_scr.Tables[0].Rows)
+                                        {
+                                            (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_scr["id"].ToString()), 1);
+                                        }
+                                    }
+                                   (new Exception_Group()).AddExceptionGroupData(envid, 1, "", 0);
+                                    continue;
+                                }
+                            }
+                            //machine startstop 15 
+                            if (startstopcount > 0)
+                            {
                                 if (ds_ss != null)
                                 {
                                     foreach (System.Data.DataRow dr_ss in ds_ss.Tables[0].Rows)
@@ -115,7 +182,20 @@ namespace ReportingServices
                                         (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_ss["id"].ToString()), 15);
                                     }
                                 }
-                                (new Exception_Group()).AddExceptionGroupData(envid, 15, "", 0);
+                               (new Exception_Group()).AddExceptionGroupData(envid, 15, "", 0);
+                                continue;
+                            }
+                            //scr 1 
+                            if (scrcount > 0)
+                            {
+                                if (ds_scr != null)
+                                {
+                                    foreach (System.Data.DataRow dr_scr in ds_scr.Tables[0].Rows)
+                                    {
+                                        (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_scr["id"].ToString()), 1);
+                                    }
+                                }
+                                (new Exception_Group()).AddExceptionGroupData(envid, 1, "", 0);
                                 continue;
                             }
 
@@ -134,23 +214,7 @@ namespace ReportingServices
                                 (new Exception_Group()).AddExceptionGroupData(envid, 3, "", 0);
                                 continue;
                             }
-
-                            //scr,typeid:1
-                            int? scrcount = (new Exception_Group()).GetScrRelatedCount(DateTime.Parse(dr_expt["timestamps"].ToString()), 3, 3, int.Parse(dr_expt["pointid"].ToString()));
-                            if (scrcount > 0)
-                            {
-                                System.Data.DataSet ds_scr = (new Exception_Group()).GetScrRelatedDs(DateTime.Parse(dr_expt["timestamps"].ToString()), 3/*offset hour*/, 3, int.Parse(dr_expt["pointid"].ToString()));
-                                if (ds_scr != null)
-                                {
-                                    foreach (System.Data.DataRow dr_scr in ds_scr.Tables[0].Rows)
-                                    {
-                                        (new Exception_Rulelog()).AddMatchData(envid, long.Parse(dr_scr["id"].ToString()), 1);
-                                    }
-                                }
-                                (new Exception_Group()).AddExceptionGroupData(envid, 1, "", 0);
-                                continue;
-                            }
-
+                         
                             //special condition,typeid:2
                             int? sconcount = (new Exception_Group()).GetSconRelatedCount(DateTime.Parse(dr_expt["timestamps"].ToString()), 2, 2, int.Parse(dr_expt["pointid"].ToString()));
                             if (sconcount > 0)
@@ -379,7 +443,7 @@ namespace ReportingServices
                                 continue;
                             }
 
-                            //special condition 20150730
+                            //special condition 20150730 type:2
                             int? sconcount = (new Exception_Group()).GetSconRelatedCount_DUST(DateTime.Parse(dr_expt["timestamps"].ToString()), 1, 1, int.Parse(dr_expt["pointid"].ToString()));
                             if (sconcount > 0)
                             {
