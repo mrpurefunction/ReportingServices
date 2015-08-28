@@ -102,6 +102,9 @@
     <Content Include="instrumentrunning_dust.aspx" />
     <Content Include="machine_startstop_rd.aspx" />
     <Content Include="instrumentrunning_basic.aspx" />
+    <Content Include="abnormalrunning_so2.aspx" />
+    <Content Include="abnormalrunning_nox.aspx" />
+    <Content Include="abnormalrunning_dust.aspx" />
     <Content Include="scr_startstop_ab_rd.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
     <Content Include="dashis.aspx" />
@@ -917,6 +920,27 @@
     </Compile>
     <Compile Include="instrumentrunning_basic.aspx.designer.cs">
       <DependentUpon>instrumentrunning_basic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="abnormalrunning_so2.aspx.cs">
+      <DependentUpon>abnormalrunning_so2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abnormalrunning_so2.aspx.designer.cs">
+      <DependentUpon>abnormalrunning_so2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="abnormalrunning_nox.aspx.cs">
+      <DependentUpon>abnormalrunning_nox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abnormalrunning_nox.aspx.designer.cs">
+      <DependentUpon>abnormalrunning_nox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="abnormalrunning_dust.aspx.cs">
+      <DependentUpon>abnormalrunning_dust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abnormalrunning_dust.aspx.designer.cs">
+      <DependentUpon>abnormalrunning_dust.aspx</DependentUpon>
     </Compile>
     <Compile Include="scr_startstop_ab_rd.aspx.cs">
       <DependentUpon>scr_startstop_ab_rd.aspx</DependentUpon>

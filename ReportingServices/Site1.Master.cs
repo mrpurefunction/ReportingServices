@@ -31,8 +31,9 @@ namespace WebApplication1
                 TreeViewNode tvn_epasync = new TreeViewNode("EPA数据上传更新");
                 TreeViewNode tvn_sourcedata = new TreeViewNode("源数据分析");
 
-                TreeViewNode tvn_reportsdemo = new TreeViewNode("环保设施运行报表");
-                TreeViewNode tvn_reportsdemo2 = new TreeViewNode("环保设施投撤记录表");
+                TreeViewNode tvn_reports_instrumentrunning = new TreeViewNode("环保设施运行报表");
+                TreeViewNode tvn_reports_inout = new TreeViewNode("环保设施投撤记录表");
+                TreeViewNode tvn_reports_abnormalrunning = new TreeViewNode("环保非正常运行记录表");
 
                 tvn_fgdscr.Nodes.Add("脱硝工况分析", "scr_startstop_ab", null, "~/scr_startstop_ab.aspx");
                 tvn_fgdscr.Nodes.Add("脱硫工况分析", "machine_startstop", null, "~/machine_startstop.aspx");
@@ -128,13 +129,17 @@ namespace WebApplication1
                 tvn_minimum.Nodes.Add("超低排放PI指标月数据统计", "minimumYQ_PI_Month", null, "~/MinimumRelease_pi_month.aspx");
                 tvn_minimum.Nodes.Add("超低排放DAS指标统计", "minimumYQ", null, "~/MinimumRelease.aspx");
 
-                tvn_reportsdemo.Nodes.Add("基本情况", "instrumentrunning_basic", null, "~/instrumentrunning_basic.aspx");
-                tvn_reportsdemo.Nodes.Add("脱硝设施", "instrumentrunning_nox", null, "~/instrumentrunning_nox.aspx");
-                tvn_reportsdemo.Nodes.Add("脱硫设施", "instrumentrunning_so2", null, "~/instrumentrunning_so2.aspx");
-                tvn_reportsdemo.Nodes.Add("除尘设施", "instrumentrunning_dust", null, "~/instrumentrunning_dust.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("基本情况", "instrumentrunning_basic", null, "~/instrumentrunning_basic.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("脱硝设施", "instrumentrunning_nox", null, "~/instrumentrunning_nox.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("脱硫设施", "instrumentrunning_so2", null, "~/instrumentrunning_so2.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("除尘设施", "instrumentrunning_dust", null, "~/instrumentrunning_dust.aspx");
 
-                tvn_reportsdemo2.Nodes.Add("机组启停", "machine_startstop_rd", null, "~/machine_startstop_rd.aspx");
-                tvn_reportsdemo2.Nodes.Add("SCR启停", "scr_startstop_rd", null, "~/scr_startstop_ab_rd.aspx");
+                tvn_reports_inout.Nodes.Add("机组启停", "machine_startstop_rd", null, "~/machine_startstop_rd.aspx");
+                tvn_reports_inout.Nodes.Add("SCR启停", "scr_startstop_rd", null, "~/scr_startstop_ab_rd.aspx");
+
+                tvn_reports_abnormalrunning.Nodes.Add("脱硝非正常运行", "abnormalrunning_nox", null, "~/abnormalrunning_nox.aspx");
+                tvn_reports_abnormalrunning.Nodes.Add("脱硫非正常运行", "abnormalrunning_so2", null, "~/abnormalrunning_so2.aspx");
+                tvn_reports_abnormalrunning.Nodes.Add("除尘非正常运行", "abnormalrunning_dust", null, "~/abnormalrunning_dust.aspx");
 
                 tvn.Nodes.Add(tvn_minimum);
                 tvn.Nodes.Add(tvn_icemsgroup);
@@ -150,8 +155,9 @@ namespace WebApplication1
                 tvn_sourcedata.Nodes.Add("分组指标源数据状态", "GroupMonDataStatus", null, "~/GroupMonitorDataStatus.aspx");
                 tvn.Nodes.Add(tvn_sourcedata);
 
-                tvn.Nodes.Add(tvn_reportsdemo);
-                tvn.Nodes.Add(tvn_reportsdemo2);
+                tvn.Nodes.Add(tvn_reports_instrumentrunning);
+                tvn.Nodes.Add(tvn_reports_inout);
+                tvn.Nodes.Add(tvn_reports_abnormalrunning);
 
                 tvn2.Nodes.Add(tvn);
                 ASPxTreeView1.Nodes.Add(tvn2);

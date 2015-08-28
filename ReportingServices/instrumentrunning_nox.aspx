@@ -10,7 +10,7 @@
     <div>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" Height="1209px" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="1270px" ProcessingMode="Remote">
-            <ServerReport ReportPath="/乐清电厂环保设施运行2"/>
+            <ServerReport ReportPath="/乐清电厂环保设施运行3"/>
         </rsweb:ReportViewer>
     </div>
 </asp:Content>
