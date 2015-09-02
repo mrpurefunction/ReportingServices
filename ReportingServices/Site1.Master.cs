@@ -52,9 +52,9 @@ namespace WebApplication1
 
                 if ((string)Session["authority"] == "1")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
@@ -62,9 +62,9 @@ namespace WebApplication1
                 }
                 if ((string)Session["authority"] == "2")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
@@ -72,9 +72,9 @@ namespace WebApplication1
                 }
                 if ((string)Session["authority"] == "3")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
@@ -82,9 +82,9 @@ namespace WebApplication1
                 }
                 if ((string)Session["authority"] == "4")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
@@ -92,9 +92,9 @@ namespace WebApplication1
                 }
                 if ((string)Session["authority"] == "5")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
@@ -102,9 +102,9 @@ namespace WebApplication1
                 }
                 if ((string)Session["authority"] == "6")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
@@ -112,9 +112,9 @@ namespace WebApplication1
                 }
                 if ((string)Session["authority"] == "7")
                 {
-                    tvn_icemsgroup.Nodes.Add("一期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
-                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
-                    tvn_icemsgroup.Nodes.Add("脱硫集控", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
+                    tvn_icemsgroup.Nodes.Add("二期集控", "terriority1", null, "~/GroupRuleLogInfo_1.aspx");
+                    tvn_icemsgroup.Nodes.Add("三期集控", "terriority2", null, "~/GroupRuleLogInfo_2.aspx");
+                    tvn_icemsgroup.Nodes.Add("灰硫控制室", "terriority3", null, "~/GroupRuleLogInfo_3.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硝运行专工", "fieldinfoYQ_SCR", null, "~/GroupRuleLogInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
