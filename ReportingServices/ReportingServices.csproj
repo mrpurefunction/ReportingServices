@@ -93,6 +93,7 @@
     <Content Include="images\title.png" />
     <Content Include="images\znlogo.png" />
     <Content Include="images\zqlogo.png" />
+    <Content Include="js\jquery.report.js" />
     <Content Include="Machine_StartStop.aspx" />
     <Content Include="CalibValueSyncRpt.aspx" />
     <Content Include="MonitorDataComparision.aspx" />
