@@ -13,4 +13,5 @@
             <ServerReport ReportPath="/nonpenaltystatistic_total"/>
         </rsweb:ReportViewer>
     </div>
+    <script src="js/jquery.report.js" type="text/javascript"></script>
 </asp:Content>
