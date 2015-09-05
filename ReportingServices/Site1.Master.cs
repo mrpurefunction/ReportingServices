@@ -63,6 +63,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "2")
                 {
@@ -73,6 +74,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "3")
                 {
@@ -83,6 +85,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "4")
                 {
@@ -93,6 +96,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "5")
                 {
@@ -103,6 +107,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "6")
                 {
@@ -113,6 +118,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "7")
                 {
@@ -123,6 +129,7 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("启停机原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
                 }
         
                 tvn_minimum.Nodes.Add("超低排放PI指标日数据统计", "minimumYQ_PI", null, "~/MinimumRelease_pi.aspx");

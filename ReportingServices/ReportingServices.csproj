@@ -30,6 +30,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,6 +41,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdRef\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdRef\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -65,7 +78,12 @@
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdRef\Model.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
@@ -77,6 +95,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -88,11 +108,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="3rdRef\Common.dll" />
+    <Content Include="3rdRef\Common.pdb" />
+    <Content Include="3rdRef\DAL.dll" />
+    <Content Include="3rdRef\DAL.pdb" />
+    <Content Include="3rdRef\Model.dll" />
+    <Content Include="3rdRef\Model.pdb" />
     <Content Include="bin\ReportingServices.dll.config" />
     <Content Include="ExceptionDataGroupSyncRpt.aspx" />
     <Content Include="images\title.png" />
     <Content Include="images\znlogo.png" />
     <Content Include="images\zqlogo.png" />
+    <Content Include="JsPlug\AmazeUI\css\admin.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.flat.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.flat.min.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.min.css" />
+    <Content Include="JsPlug\AmazeUI\css\app.css" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.svg" />
+    <Content Include="JsPlug\AmazeUI\i\app-icon72x72%402x.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-chrome.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-firefox.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-ie.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-opera.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-safari.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\adminPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\blogPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\landing.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\landingPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\loginPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\sidebarPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\favicon.png" />
+    <Content Include="JsPlug\AmazeUI\i\startup-640x1096.png" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.ie8polyfill.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.ie8polyfill.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.widgets.helper.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.widgets.helper.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\app.js" />
+    <Content Include="JsPlug\AmazeUI\js\handlebars.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\jquery.min.js" />
+    <Content Include="js\jquery.report.js" />
     <Content Include="Machine_StartStop.aspx" />
     <Content Include="CalibValueSyncRpt.aspx" />
     <Content Include="MonitorDataComparision.aspx" />
@@ -105,6 +162,7 @@
     <Content Include="abnormalrunning_so2.aspx" />
     <Content Include="abnormalrunning_nox.aspx" />
     <Content Include="abnormalrunning_dust.aspx" />
+    <Content Include="scr_startstop_ab_description.aspx" />
     <Content Include="scr_startstop_ab_rd.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
     <Content Include="dashis.aspx" />
@@ -168,6 +226,11 @@
     <Content Include="WebForm2.aspx" />
     <Content Include="WSConfirm.asmx" />
     <Content Include="LogoutHandler.ashx" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.eot" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.ttf" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.woff" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.woff2" />
+    <Content Include="JsPlug\AmazeUI\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\ReportingServices.pubxml" />
     <None Include="Properties\PublishProfiles\ReportsRelease.pubxml" />
     <None Include="Properties\PublishProfiles\ReportsWeb.pubxml" />
@@ -942,6 +1005,13 @@
     <Compile Include="abnormalrunning_dust.aspx.designer.cs">
       <DependentUpon>abnormalrunning_dust.aspx</DependentUpon>
     </Compile>
+    <Compile Include="scr_startstop_ab_description.aspx.cs">
+      <DependentUpon>scr_startstop_ab_description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scr_startstop_ab_description.aspx.designer.cs">
+      <DependentUpon>scr_startstop_ab_description.aspx</DependentUpon>
+    </Compile>
     <Compile Include="scr_startstop_ab_rd.aspx.cs">
       <DependentUpon>scr_startstop_ab_rd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1158,6 +1228,7 @@
     <Compile Include="unitcomparision.aspx.designer.cs">
       <DependentUpon>unitcomparision.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webapi\RulelogController.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1180,6 +1251,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
