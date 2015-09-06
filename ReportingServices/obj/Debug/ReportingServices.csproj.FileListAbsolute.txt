@@ -69,3 +69,4 @@ C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingSer
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\bin\System.Web.Http.WebHost.xml
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\bin\Microsoft.Web.Infrastructure.xml
 C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\zhefeng\Documents\Projects\ZHIQI\YueQing\ReportingServices\ReportingServices\obj\Debug\ReportingServices.csprojResolveAssemblyReference.cache

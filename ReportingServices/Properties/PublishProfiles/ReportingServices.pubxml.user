@@ -10,52 +10,52 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="3rdRef/Common.dll">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="3rdRef/Common.pdb">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="3rdRef/DAL.dll">
-      <publishTime>09/05/2015 07:48:09</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="3rdRef/DAL.pdb">
-      <publishTime>09/05/2015 07:48:09</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="3rdRef/Model.dll">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="3rdRef/Model.pdb">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="abnormalrunning_dust.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="abnormalrunning_nox.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="abnormalrunning_so2.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="App_Data/Northwind.mdb">
       <publishTime>10/15/2014 15:12:16</publishTime>
     </File>
     <File Include="bin/AspNetPager.dll">
-      <publishTime>08/28/2015 16:36:13</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/AspNetPager.pdb">
       <publishTime>08/28/2015 16:36:13</publishTime>
     </File>
     <File Include="bin/Common.dll">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/Common.pdb">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>09/05/2015 07:48:09</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/DAL.pdb">
-      <publishTime>09/05/2015 07:48:09</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v14.1.resources.dll">
       <publishTime>10/21/2014 22:02:16</publishTime>
@@ -163,25 +163,25 @@
       <publishTime>04/16/2010 13:42:32</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>07/08/2013 15:15:08</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/Model.pdb">
-      <publishTime>09/02/2015 15:20:50</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>10/02/2013 12:10:10</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/ReportingServices.dll">
-      <publishTime>09/05/2015 10:50:50</publishTime>
+      <publishTime>09/05/2015 15:32:24</publishTime>
     </File>
     <File Include="bin/ReportingServices.dll.config">
-      <publishTime>09/05/2015 08:34:52</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/ReportingServices.pdb">
-      <publishTime>09/05/2015 10:50:50</publishTime>
+      <publishTime>09/05/2015 15:32:24</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Data.v14.1.resources.dll">
       <publishTime>10/21/2014 22:02:16</publishTime>
@@ -199,25 +199,25 @@
       <publishTime>10/21/2014 22:02:07</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>05/07/2013 13:09:16</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>05/07/2013 13:09:16</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>05/07/2013 13:09:18</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/Trirand.Web.dll">
       <publishTime>11/13/2014 11:12:07</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
-      <publishTime>07/09/2013 11:33:54</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
-      <publishTime>07/09/2013 11:33:54</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
-      <publishTime>07/09/2013 11:34:00</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="CalibSpan.aspx">
       <publishTime>03/26/2015 16:58:41</publishTime>
@@ -2095,19 +2095,19 @@
       <publishTime>07/08/2015 14:32:02</publishTime>
     </File>
     <File Include="GroupRuleLogInfo.aspx">
-      <publishTime>09/02/2015 15:08:19</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_1.aspx">
-      <publishTime>09/02/2015 15:08:19</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_2.aspx">
-      <publishTime>09/02/2015 15:08:19</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_3.aspx">
-      <publishTime>09/02/2015 15:08:19</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="GroupRuleLogInfo_FGD.aspx">
-      <publishTime>09/02/2015 15:08:19</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="head1.ascx">
       <publishTime>01/21/2015 19:10:01</publishTime>
@@ -2122,7 +2122,7 @@
       <publishTime>10/15/2014 14:57:41</publishTime>
     </File>
     <File Include="images/title.png">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="images/znlogo.png">
       <publishTime>06/25/2015 21:34:23</publishTime>
@@ -2131,19 +2131,19 @@
       <publishTime>06/25/2015 16:28:56</publishTime>
     </File>
     <File Include="instrumentrunning_basic.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="instrumentrunning_dust.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="instrumentrunning_nox.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="instrumentrunning_so2.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="js/jquery.report.js">
-      <publishTime>09/02/2015 15:23:56</publishTime>
+      <publishTime>09/04/2015 23:10:54</publishTime>
     </File>
     <File Include="js/trirand/i18n/grid.locale-ar.js">
       <publishTime>10/15/2014 15:07:55</publishTime>
@@ -2302,112 +2302,112 @@
       <publishTime>10/15/2014 15:04:15</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/css/admin.css">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/css/amazeui.css">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:06</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/css/amazeui.flat.css">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/css/amazeui.flat.min.css">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/css/amazeui.min.css">
-      <publishTime>08/31/2015 10:04:49</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/css/app.css">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/fonts/fontawesome-webfont.eot">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/fonts/fontawesome-webfont.svg">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/fonts/fontawesome-webfont.ttf">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/fonts/fontawesome-webfont.woff">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/fonts/fontawesome-webfont.woff2">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/fonts/FontAwesome.otf">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/app-icon72x72%402x.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/admin-chrome.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/admin-firefox.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/admin-ie.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/admin-opera.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/admin-safari.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/adminPage.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/blogPage.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/landing.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/landingPage.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/loginPage.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/examples/sidebarPage.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/favicon.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/i/startup-640x1096.png">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/amazeui.ie8polyfill.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/amazeui.ie8polyfill.min.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/amazeui.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/amazeui.min.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/amazeui.widgets.helper.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/amazeui.widgets.helper.min.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/app.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/handlebars.min.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="JsPlug/AmazeUI/js/jquery.min.js">
-      <publishTime>08/28/2015 15:16:23</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="logon.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="LogoutHandler.ashx">
       <publishTime>05/06/2015 13:20:24</publishTime>
@@ -2416,7 +2416,7 @@
       <publishTime>05/12/2015 08:17:47</publishTime>
     </File>
     <File Include="machine_startstop_rd.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="MinimumRelease.aspx">
       <publishTime>01/25/2015 15:32:12</publishTime>
@@ -2431,7 +2431,7 @@
       <publishTime>07/08/2015 14:22:34</publishTime>
     </File>
     <File Include="PiDasComparisions.aspx">
-      <publishTime>09/02/2015 15:08:19</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
       <publishTime>10/23/2014 10:56:18</publishTime>
@@ -2443,7 +2443,7 @@
       <publishTime>01/23/2015 12:11:47</publishTime>
     </File>
     <File Include="Reports2.aspx">
-      <publishTime>03/26/2015 16:57:38</publishTime>
+      <publishTime>09/05/2015 15:28:50</publishTime>
     </File>
     <File Include="Reports_client.aspx">
       <publishTime>05/05/2015 16:36:55</publishTime>
@@ -2464,13 +2464,13 @@
       <publishTime>05/12/2015 08:15:49</publishTime>
     </File>
     <File Include="scr_startstop_ab_description.aspx">
-      <publishTime>08/31/2015 13:00:03</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="scr_startstop_ab_rd.aspx">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="Site1.Master">
-      <publishTime>09/02/2015 15:08:20</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="Themes/images/ui-bg_flat_0_aaaaaa_40x100.png">
       <publishTime>08/13/2014 13:57:50</publishTime>
@@ -2542,7 +2542,7 @@
       <publishTime>01/25/2015 16:16:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/05/2015 10:51:42</publishTime>
+      <publishTime>09/05/2015 15:28:07</publishTime>
     </File>
     <File Include="Webapi/RulelogController.cs">
       <publishTime>08/31/2015 12:59:50</publishTime>
