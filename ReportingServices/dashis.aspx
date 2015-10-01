@@ -13,4 +13,5 @@
             <ServerReport ReportPath="/DAS小时均值"/>
         </rsweb:ReportViewer>
     </div>
+    <script src="js/jquery.report.js" type="text/javascript"></script>
 </asp:Content>

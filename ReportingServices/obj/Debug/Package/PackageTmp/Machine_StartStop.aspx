@@ -13,4 +13,5 @@
             <ServerReport ReportPath="/machine_startstop"/>
         </rsweb:ReportViewer>
     </div>
+    <script src="js/jquery.report.js" type="text/javascript"></script>
 </asp:Content>

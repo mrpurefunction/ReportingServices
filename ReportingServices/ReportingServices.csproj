@@ -40,6 +40,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\..\..\..\..\..\Source\Workspaces\ReportingServices1\ReportingServices\bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\..\..\..\..\..\Source\Workspaces\ReportingServices1\ReportingServices\bin\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\..\..\..\..\..\Source\Workspaces\ReportingServices1\ReportingServices\bin\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -65,7 +74,15 @@
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Model">
+      <HintPath>..\..\..\..\..\..\Source\Workspaces\ReportingServices1\ReportingServices\bin\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Source\Workspaces\ReportingServices1\ReportingServices\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
@@ -77,6 +94,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -88,14 +108,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abnormalrunning_dust.aspx" />
+    <Content Include="abnormalrunning_nox.aspx" />
+    <Content Include="abnormalrunning_so2.aspx" />
     <Content Include="bin\ReportingServices.dll.config" />
     <Content Include="ExceptionDataGroupSyncRpt.aspx" />
     <Content Include="images\title.png" />
     <Content Include="images\znlogo.png" />
     <Content Include="images\zqlogo.png" />
+    <Content Include="instrumentrunning_basic.aspx" />
+    <Content Include="instrumentrunning_dust.aspx" />
+    <Content Include="instrumentrunning_nox.aspx" />
+    <Content Include="instrumentrunning_so2.aspx" />
+    <Content Include="JsPlug\AmazeUI\css\admin.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.flat.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.flat.min.css" />
+    <Content Include="JsPlug\AmazeUI\css\amazeui.min.css" />
+    <Content Include="JsPlug\AmazeUI\css\app.css" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.svg" />
+    <Content Include="JsPlug\AmazeUI\i\app-icon72x72%402x.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-chrome.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-firefox.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-ie.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-opera.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\admin-safari.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\adminPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\blogPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\landing.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\landingPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\loginPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\examples\sidebarPage.png" />
+    <Content Include="JsPlug\AmazeUI\i\favicon.png" />
+    <Content Include="JsPlug\AmazeUI\i\startup-640x1096.png" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.ie8polyfill.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.ie8polyfill.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.widgets.helper.js" />
+    <Content Include="JsPlug\AmazeUI\js\amazeui.widgets.helper.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\app.js" />
+    <Content Include="JsPlug\AmazeUI\js\handlebars.min.js" />
+    <Content Include="JsPlug\AmazeUI\js\jquery.min.js" />
     <Content Include="js\jquery.report.js" />
     <Content Include="Machine_StartStop.aspx" />
     <Content Include="CalibValueSyncRpt.aspx" />
+    <Content Include="machine_startstop_ab_description.aspx" />
+    <Content Include="machine_startstop_rd.aspx" />
+    <Content Include="machine_startstop_rd_month.aspx" />
     <Content Include="MonitorDataComparision.aspx" />
     <Content Include="GroupMonitorDataStatus.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
@@ -144,6 +204,10 @@
     <Content Include="Reports_client.aspx" />
     <Content Include="Reports2.aspx" />
     <Content Include="script\jquery-2.1.3.min.js" />
+    <Content Include="scr_startstop_ab_description.aspx" />
+    <Content Include="scr_startstop_ab_rd.aspx" />
+    <Content Include="scr_startstop_sync.aspx" />
+    <Content Include="scr_startstop_sync_month.aspx" />
     <Content Include="Themes\images\ui-bg_flat_55_fbec88_40x100.png" />
     <Content Include="Themes\images\ui-bg_glass_75_d0e5f5_1x400.png" />
     <Content Include="Themes\images\ui-bg_glass_85_dfeffc_1x400.png" />
@@ -160,6 +224,11 @@
     <Content Include="WebForm2.aspx" />
     <Content Include="WSConfirm.asmx" />
     <Content Include="LogoutHandler.ashx" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.eot" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.ttf" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.woff" />
+    <Content Include="JsPlug\AmazeUI\fonts\fontawesome-webfont.woff2" />
+    <Content Include="JsPlug\AmazeUI\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\ReportingServices.pubxml" />
     <None Include="Properties\PublishProfiles\ReportsRelease.pubxml" />
     <None Include="Properties\PublishProfiles\ReportsWeb.pubxml" />
@@ -843,12 +912,61 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abnormalrunning_dust.aspx.cs">
+      <DependentUpon>abnormalrunning_dust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abnormalrunning_dust.aspx.designer.cs">
+      <DependentUpon>abnormalrunning_dust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="abnormalrunning_nox.aspx.cs">
+      <DependentUpon>abnormalrunning_nox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abnormalrunning_nox.aspx.designer.cs">
+      <DependentUpon>abnormalrunning_nox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="abnormalrunning_so2.aspx.cs">
+      <DependentUpon>abnormalrunning_so2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abnormalrunning_so2.aspx.designer.cs">
+      <DependentUpon>abnormalrunning_so2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExceptionDataGroupSyncRpt.aspx.cs">
       <DependentUpon>ExceptionDataGroupSyncRpt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExceptionDataGroupSyncRpt.aspx.designer.cs">
       <DependentUpon>ExceptionDataGroupSyncRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_basic.aspx.cs">
+      <DependentUpon>instrumentrunning_basic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_basic.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_basic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_dust.aspx.cs">
+      <DependentUpon>instrumentrunning_dust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_dust.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_dust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_nox.aspx.cs">
+      <DependentUpon>instrumentrunning_nox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_nox.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_nox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instrumentrunning_so2.aspx.cs">
+      <DependentUpon>instrumentrunning_so2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instrumentrunning_so2.aspx.designer.cs">
+      <DependentUpon>instrumentrunning_so2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Machine_StartStop.aspx.cs">
       <DependentUpon>Machine_StartStop.aspx</DependentUpon>
@@ -863,6 +981,27 @@
     </Compile>
     <Compile Include="CalibValueSyncRpt.aspx.designer.cs">
       <DependentUpon>CalibValueSyncRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="machine_startstop_ab_description.aspx.cs">
+      <DependentUpon>machine_startstop_ab_description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="machine_startstop_ab_description.aspx.designer.cs">
+      <DependentUpon>machine_startstop_ab_description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="machine_startstop_rd.aspx.cs">
+      <DependentUpon>machine_startstop_rd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="machine_startstop_rd.aspx.designer.cs">
+      <DependentUpon>machine_startstop_rd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="machine_startstop_rd_month.aspx.cs">
+      <DependentUpon>machine_startstop_rd_month.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="machine_startstop_rd_month.aspx.designer.cs">
+      <DependentUpon>machine_startstop_rd_month.aspx</DependentUpon>
     </Compile>
     <Compile Include="MonitorDataComparision.aspx.cs">
       <DependentUpon>MonitorDataComparision.aspx</DependentUpon>
@@ -1073,6 +1212,34 @@
     <Compile Include="Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="scr_startstop_ab_description.aspx.cs">
+      <DependentUpon>scr_startstop_ab_description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scr_startstop_ab_description.aspx.designer.cs">
+      <DependentUpon>scr_startstop_ab_description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scr_startstop_ab_rd.aspx.cs">
+      <DependentUpon>scr_startstop_ab_rd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scr_startstop_ab_rd.aspx.designer.cs">
+      <DependentUpon>scr_startstop_ab_rd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scr_startstop_sync.aspx.cs">
+      <DependentUpon>scr_startstop_sync.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scr_startstop_sync.aspx.designer.cs">
+      <DependentUpon>scr_startstop_sync.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scr_startstop_sync_month.aspx.cs">
+      <DependentUpon>scr_startstop_sync_month.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scr_startstop_sync_month.aspx.designer.cs">
+      <DependentUpon>scr_startstop_sync_month.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1087,6 +1254,7 @@
     <Compile Include="unitcomparision.aspx.designer.cs">
       <DependentUpon>unitcomparision.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webapi\RulelogController.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

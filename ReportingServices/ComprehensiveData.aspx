@@ -13,4 +13,5 @@
             <ServerReport ReportPath="/异常分组统计20141108"/>
         </rsweb:ReportViewer>
     </div>
+    <script src="js/jquery.report.js" type="text/javascript"></script>
 </asp:Content>

@@ -13,4 +13,5 @@
             <ServerReport ReportPath="/DAS_PI_Comparision1"/>
         </rsweb:ReportViewer>
     </div>
+    <script src="js/jquery.report.js" type="text/javascript"></script>
 </asp:Content>

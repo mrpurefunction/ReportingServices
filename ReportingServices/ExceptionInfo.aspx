@@ -126,11 +126,13 @@
                 </cc1:JQGridColumn>          
                <cc1:JQGridColumn  DataField="msconfirm" TextAlign="Center" HeaderText="人工确认" Width="80" DataType="String" Visible="false">
                 </cc1:JQGridColumn>  
-                <cc1:JQGridColumn  DataField="groupname" TextAlign="Center" HeaderText="归属类型" DataType="String" Editable="true"  EditType="DropDown" EditorControlID="GroupType_ddl">
+                <cc1:JQGridColumn  DataField="groupname" TextAlign="Center" HeaderText="归属类型" Width="100" DataType="String" Editable="true"  EditType="DropDown" EditorControlID="GroupType_ddl">
                 </cc1:JQGridColumn>               
-                <cc1:JQGridColumn  DataField="relatedlogcount" TextAlign="Center" HeaderText="关联记录数" DataType="Int">
+                <cc1:JQGridColumn  DataField="relatedlogcount" TextAlign="Center" HeaderText="关联记录数" Width="100" DataType="Int">
                 </cc1:JQGridColumn>
-                <cc1:JQGridColumn  DataField="lockedstatustext" TextAlign="Center" HeaderText="锁定状态" DataType="String"  EditType="DropDown" EditorControlID="LockStatus_ddl" Editable="true">
+                <cc1:JQGridColumn  DataField="lockedstatustext" TextAlign="Center" HeaderText="锁定状态" Width="100" DataType="String"  EditType="DropDown" EditorControlID="LockStatus_ddl" Editable="true">
+                </cc1:JQGridColumn>
+                <cc1:JQGridColumn  DataField="typecontent" TextAlign="Center" HeaderText="原因分析" Width="120" DataType="String"  EditType="TextArea" Editable="true">
                 </cc1:JQGridColumn>                
             </Columns>
             <EditDialogSettings CloseAfterEditing="True" />

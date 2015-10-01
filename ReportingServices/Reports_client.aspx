@@ -10,4 +10,5 @@
         </rsweb:ReportViewer>
             </form>
     </div>
+    <script src="js/jquery.report.js" type="text/javascript"></script>
 </body>

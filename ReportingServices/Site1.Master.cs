@@ -31,6 +31,10 @@ namespace WebApplication1
                 TreeViewNode tvn_epasync = new TreeViewNode("EPA数据上传更新");
                 TreeViewNode tvn_sourcedata = new TreeViewNode("源数据分析");
 
+                TreeViewNode tvn_reports_instrumentrunning = new TreeViewNode("环保设施运行报表");
+                TreeViewNode tvn_reports_inout = new TreeViewNode("环保设施投撤记录表");
+                TreeViewNode tvn_reports_abnormalrunning = new TreeViewNode("环保非正常运行记录表");
+
                 tvn_fgdscr.Nodes.Add("脱硝工况分析", "scr_startstop_ab", null, "~/scr_startstop_ab.aspx");
                 tvn_fgdscr.Nodes.Add("脱硫工况分析", "machine_startstop", null, "~/machine_startstop.aspx");
 
@@ -59,6 +63,8 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "2")
                 {
@@ -69,6 +75,8 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "3")
                 {
@@ -79,6 +87,8 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "4")
                 {
@@ -89,6 +99,8 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "5")
                 {
@@ -99,6 +111,8 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "6")
                 {
@@ -109,6 +123,8 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
                 if ((string)Session["authority"] == "7")
                 {
@@ -119,11 +135,27 @@ namespace WebApplication1
                     tvn_icemsgroup.Nodes.Add("脱硫运行专工", "fieldinfoYQ_FGD", null, "~/GroupRuleLogInfo_FGD.aspx");
                     tvn_icemsgroup.Nodes.Add("环保专工(环保排污核查)", "exceptioninfoYQ", null, "~/ExceptionInfo.aspx");
                     tvn_icemsgroup.Nodes.Add("仪控专工(DAS/PI双重校验)", "das_piYQ", null, "~/PiDasComparisions.aspx");
+                    tvn_icemsgroup.Nodes.Add("SCR非同步原因分析", "scr_startstop_des", null, "~/scr_startstop_ab_description.aspx");
+                    tvn_icemsgroup.Nodes.Add("机组启停原因分析", "machine_startstop_des", null, "~/machine_startstop_ab_description.aspx");
                 }
         
                 tvn_minimum.Nodes.Add("超低排放PI指标日数据统计", "minimumYQ_PI", null, "~/MinimumRelease_pi.aspx");
                 tvn_minimum.Nodes.Add("超低排放PI指标月数据统计", "minimumYQ_PI_Month", null, "~/MinimumRelease_pi_month.aspx");
                 tvn_minimum.Nodes.Add("超低排放DAS指标统计", "minimumYQ", null, "~/MinimumRelease.aspx");
+
+                tvn_reports_instrumentrunning.Nodes.Add("基本情况", "instrumentrunning_basic", null, "~/instrumentrunning_basic.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("脱硝设施", "instrumentrunning_nox", null, "~/instrumentrunning_nox.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("脱硫设施", "instrumentrunning_so2", null, "~/instrumentrunning_so2.aspx");
+                tvn_reports_instrumentrunning.Nodes.Add("除尘设施", "instrumentrunning_dust", null, "~/instrumentrunning_dust.aspx");
+
+                tvn_reports_inout.Nodes.Add("月机组启停记录", "machine_startstop_rd", null, "~/machine_startstop_rd_month.aspx");
+                tvn_reports_inout.Nodes.Add("月非同步运行记录", "scr_startstop_async", null, "~/scr_startstop_sync_month.aspx");
+                tvn_reports_inout.Nodes.Add("机组启停记录", "machine_startstop_rd", null, "~/machine_startstop_rd.aspx");
+                tvn_reports_inout.Nodes.Add("非同步运行记录", "scr_startstop_async", null, "~/scr_startstop_sync.aspx");
+
+                tvn_reports_abnormalrunning.Nodes.Add("脱硝非正常运行", "abnormalrunning_nox", null, "~/abnormalrunning_nox.aspx");
+                tvn_reports_abnormalrunning.Nodes.Add("脱硫非正常运行", "abnormalrunning_so2", null, "~/abnormalrunning_so2.aspx");
+                tvn_reports_abnormalrunning.Nodes.Add("除尘非正常运行", "abnormalrunning_dust", null, "~/abnormalrunning_dust.aspx");
 
                 tvn.Nodes.Add(tvn_minimum);
                 tvn.Nodes.Add(tvn_icemsgroup);
@@ -138,6 +170,10 @@ namespace WebApplication1
                 tvn_sourcedata.Nodes.Add("DAS/WEB/PI源数据对比", "MonitorDataCom", null, "~/MonitorDataComparision.aspx");
                 tvn_sourcedata.Nodes.Add("分组指标源数据状态", "GroupMonDataStatus", null, "~/GroupMonitorDataStatus.aspx");
                 tvn.Nodes.Add(tvn_sourcedata);
+
+                tvn.Nodes.Add(tvn_reports_instrumentrunning);
+                tvn.Nodes.Add(tvn_reports_inout);
+                tvn.Nodes.Add(tvn_reports_abnormalrunning);
 
                 tvn2.Nodes.Add(tvn);
                 ASPxTreeView1.Nodes.Add(tvn2);
@@ -216,14 +252,14 @@ namespace WebApplication1
                         isexist = NodesExpand(nodename, tvn.Nodes);
                         if(isexist)
                         {
-                            tvn.Parent.Expanded = true;
+                            //tvn.Parent.Expanded = true;
                             return true;
                         }
                     }
                 }
                 else
                 {
-                    tvn.Parent.Expanded = true;
+                    tvn.TreeView.ExpandToNode(tvn);
                     return true;
                 }
             }
@@ -241,5 +277,9 @@ namespace WebApplication1
             }
         }
 
+        protected void ASPxTreeView1_PreRender(object sender, EventArgs e)
+        {
+            ASPxTreeView1.ExpandToNode(ASPxTreeView1.SelectedNode);
+        }
     }
 }

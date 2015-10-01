@@ -111,10 +111,18 @@ namespace ReportingServices
                 Database db = DatabaseFactory.CreateDatabase("dbconn");
                 System.Data.Common.DbCommand dbc = db.GetSqlStringCommand(sb.ToString());
                 int rcount = (int)db.ExecuteScalar(dbc);
+
+                //modified 20150917
+                string typecontent = e.RowData["typecontent"];
+                if (typecontent == null)
+                {
+                    typecontent = "";
+                }
+
                 if (rcount > 0)
                 {
                     StringBuilder sb2 = new StringBuilder();
-                    sb2.Append("update exceptiondata_group set typeid = " + typeid + ", locked=" + lockedstatus + ", mconfirm = 0 where envir_id = " + e.RowKey);
+                    sb2.Append("update exceptiondata_group set typeid = " + typeid + ", typecontent='" + typecontent + "', locked=" + lockedstatus + ", mconfirm = 0 where envir_id = " + e.RowKey);
                     System.Data.Common.DbCommand dbc2 = db.GetSqlStringCommand(sb2.ToString());
                     db.ExecuteNonQuery(dbc2);
                 }
@@ -125,7 +133,9 @@ namespace ReportingServices
                     sb2.Append(e.RowKey);
                     sb2.Append(",");
                     sb2.Append(typeid);
-                    sb2.Append(",'',0," + lockedstatus + ")");
+                    sb2.Append(",'");
+                    sb2.Append(typecontent);
+                    sb2.Append("',0," + lockedstatus + ")");
                     System.Data.Common.DbCommand dbc2 = db.GetSqlStringCommand(sb2.ToString());
                     db.ExecuteNonQuery(dbc2);
                 }
