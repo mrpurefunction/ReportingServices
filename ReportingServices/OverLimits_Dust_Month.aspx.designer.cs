@@ -7,36 +7,27 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
+namespace ReportingServices {
     
     
-    public partial class Site1 {
+    public partial class OverLimits_Dust_Month {
         
         /// <summary>
-        /// head 控件。
+        /// ScriptManager1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// ASPxTreeView1 控件。
+        /// ReportViewer1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTreeView.ASPxTreeView ASPxTreeView1;
-        
-        /// <summary>
-        /// ContentPlaceHolder1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::Microsoft.Reporting.WebForms.ReportViewer ReportViewer1;
     }
 }

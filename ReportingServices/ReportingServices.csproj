@@ -158,6 +158,9 @@
     <Content Include="machine_startstop_rd_month.aspx" />
     <Content Include="MonitorDataComparision.aspx" />
     <Content Include="GroupMonitorDataStatus.aspx" />
+    <Content Include="OverLimits_Dust_Month.aspx" />
+    <Content Include="OverLimits_Nox_Month.aspx" />
+    <Content Include="OverLimits_So2_Month.aspx" />
     <Content Include="SCR_StartStop_AB.aspx" />
     <Content Include="dashis.aspx" />
     <Content Include="daspi_watchdog.aspx" />
@@ -1016,6 +1019,27 @@
     </Compile>
     <Compile Include="GroupMonitorDataStatus.aspx.designer.cs">
       <DependentUpon>GroupMonitorDataStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OverLimits_Dust_Month.aspx.cs">
+      <DependentUpon>OverLimits_Dust_Month.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OverLimits_Dust_Month.aspx.designer.cs">
+      <DependentUpon>OverLimits_Dust_Month.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OverLimits_Nox_Month.aspx.cs">
+      <DependentUpon>OverLimits_Nox_Month.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OverLimits_Nox_Month.aspx.designer.cs">
+      <DependentUpon>OverLimits_Nox_Month.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OverLimits_So2_Month.aspx.cs">
+      <DependentUpon>OverLimits_So2_Month.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OverLimits_So2_Month.aspx.designer.cs">
+      <DependentUpon>OverLimits_So2_Month.aspx</DependentUpon>
     </Compile>
     <Compile Include="SCR_StartStop_AB.aspx.cs">
       <DependentUpon>SCR_StartStop_AB.aspx</DependentUpon>

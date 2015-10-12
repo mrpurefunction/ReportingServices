@@ -31,9 +31,15 @@ namespace WebApplication1
                 TreeViewNode tvn_epasync = new TreeViewNode("EPA数据上传更新");
                 TreeViewNode tvn_sourcedata = new TreeViewNode("源数据分析");
 
+                TreeViewNode tvn_overlimits = new TreeViewNode("月超限值明细分析");
+
                 TreeViewNode tvn_reports_instrumentrunning = new TreeViewNode("环保设施运行报表");
                 TreeViewNode tvn_reports_inout = new TreeViewNode("环保设施投撤记录表");
                 TreeViewNode tvn_reports_abnormalrunning = new TreeViewNode("环保非正常运行记录表");
+
+                tvn_overlimits.Nodes.Add("脱硝月明细", "OverLimits_Nox", null, "~/OverLimits_Nox_Month.aspx");
+                tvn_overlimits.Nodes.Add("脱硫月明细", "OverLimits_So2", null, "~/OverLimits_So2_Month.aspx");
+                tvn_overlimits.Nodes.Add("除尘月明细", "OverLimits_Dust", null, "~/OverLimits_Dust_Month.aspx");
 
                 tvn_fgdscr.Nodes.Add("脱硝工况分析", "scr_startstop_ab", null, "~/scr_startstop_ab.aspx");
                 tvn_fgdscr.Nodes.Add("脱硫工况分析", "machine_startstop", null, "~/machine_startstop.aspx");
@@ -174,6 +180,7 @@ namespace WebApplication1
                 tvn.Nodes.Add(tvn_reports_instrumentrunning);
                 tvn.Nodes.Add(tvn_reports_inout);
                 tvn.Nodes.Add(tvn_reports_abnormalrunning);
+                tvn.Nodes.Add(tvn_overlimits);
 
                 tvn2.Nodes.Add(tvn);
                 ASPxTreeView1.Nodes.Add(tvn2);
