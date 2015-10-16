@@ -80,7 +80,7 @@
                 function refreshclick() {
                     //setTimeout(null, 3000);
                     if ($("#autorefresh")[0].checked) {
-                        var l = setInterval('$("#refresh_Jqgrid1_top").click()', 300000); //300000
+                        var l = setInterval('$("#refresh_Jqgrid1_top").click()', 60000); //300000
                         $("#timerinside")[0].value = l;                        
                     }
                     else {
