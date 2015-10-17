@@ -62,8 +62,8 @@ namespace ReportingServices
             try
             {
                 ComparerEngine ce = new ComparerEngine();
-                ce.InitCrvls(DateTime.Parse(sst), DateTime.Parse(set), 1);
-                ce.InitCrls(DateTime.Parse(sst), DateTime.Parse(set), 1);
+                ce.InitCrvls(DateTime.Parse(sst), DateTime.Parse(set), 2);
+                ce.InitCrls(DateTime.Parse(sst), DateTime.Parse(set), 2);
 
                 ce.MarkCrvls();
                 ce.MarkCrls();

@@ -62,8 +62,8 @@ namespace ReportingServices
             try
             {
                 ComparerEngine ce = new ComparerEngine();
-                ce.InitEgls(DateTime.Parse(sst), DateTime.Parse(set), 1);
-                ce.InitErmls(DateTime.Parse(sst), DateTime.Parse(set), 1);
+                ce.InitEgls(DateTime.Parse(sst), DateTime.Parse(set), 2);
+                ce.InitErmls(DateTime.Parse(sst), DateTime.Parse(set), 2);
 
                 ce.MarkEgls();
                 ce.MarkErmls();
