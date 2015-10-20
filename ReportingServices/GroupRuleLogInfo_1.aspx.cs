@@ -155,7 +155,7 @@ namespace ReportingServices
                     StringBuilder sb = new StringBuilder();
                     sb.Append("select t.id,iif(s.description is null,t.rulename,s.description) as rulename,t.alarmlog,t.timelog,t.timelogend,t.alarmdis,t.cemstype,iif(t.confirmedgroup is null, t.alarmlog,t.confirmedgroup) as confirmedgroup,iif(t.validatedgroup is null,iif(t.confirmedgroup is null, t.alarmlog,t.confirmedgroup),t.validatedgroup) as validatedgroup ,iif(k.statusname is null,'未确认',k.statusname) as groupstatus,s.machineid from t_RulelogS t left join Point_Machine_Map s on t.RuleName = s.pointname left join grouprulestatus k on t.groupstatus=k.id where ");
                     sb.Append("t.timelog <= '" + sed + "' and ");
-                    sb.Append("t.timelog >= '" + ssd + "' and (s.machineid=1 or s.machineid=2) and s.machineid="+machineid+" and t.cemstype='SCR' order by t.timelog");
+                    sb.Append("t.timelog >= '" + ssd + "' and /*(s.machineid=5 or s.machineid=6) and*/ s.machineid="+machineid+" and t.cemstype='SCR' order by t.timelog");
                     Database db = DatabaseFactory.CreateDatabase("dbconn");
                     System.Data.Common.DbCommand dbc = db.GetSqlStringCommand(sb.ToString());
                     ds = db.ExecuteDataSet(dbc);

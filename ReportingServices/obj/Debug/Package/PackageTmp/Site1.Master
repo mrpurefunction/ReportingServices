@@ -54,7 +54,7 @@
         <table style="height:1400px">
             <tr>
                 <td style="width:159px;height:100%;vertical-align:top;text-align:left" id="leftcol">                   
-                    <dx:ASPxTreeView ID="ASPxTreeView1" runat="server" AllowSelectNode="True" Theme="Metropolis" OnNodeClick="ASPxTreeView1_NodeClick" Width="159px">
+                    <dx:ASPxTreeView ID="ASPxTreeView1" runat="server" AllowSelectNode="True" Theme="Metropolis" OnPreRender="ASPxTreeView1_PreRender" OnNodeClick="ASPxTreeView1_NodeClick" Width="159px">
                         </dx:ASPxTreeView>                   
                 </td>
                 <td style="width:12px;height:100%;vertical-align:top;text-align:left"></td>
