@@ -113,6 +113,7 @@
     <Content Include="abnormalrunning_so2.aspx" />
     <Content Include="bin\ReportingServices.dll.config" />
     <Content Include="ExceptionDataGroupSyncRpt.aspx" />
+    <Content Include="GroupRuleLogInfo_Total.aspx" />
     <Content Include="images\title.png" />
     <Content Include="images\znlogo.png" />
     <Content Include="images\zqlogo.png" />
@@ -942,6 +943,13 @@
     </Compile>
     <Compile Include="ExceptionDataGroupSyncRpt.aspx.designer.cs">
       <DependentUpon>ExceptionDataGroupSyncRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupRuleLogInfo_Total.aspx.cs">
+      <DependentUpon>GroupRuleLogInfo_Total.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupRuleLogInfo_Total.aspx.designer.cs">
+      <DependentUpon>GroupRuleLogInfo_Total.aspx</DependentUpon>
     </Compile>
     <Compile Include="instrumentrunning_basic.aspx.cs">
       <DependentUpon>instrumentrunning_basic.aspx</DependentUpon>
